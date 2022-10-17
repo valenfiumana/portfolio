@@ -1,0 +1,289 @@
+
+/* - - - - - - - - - - - - - - - - - - - - GENERAL STYLES - - - - - - - - - - - - - - - - - - - -*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+
+body{
+    background-color: rgba(0, 0, 0, 0.918);
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - NAV BAR - - - - - - - - - - - - - - - - - - - -  */
+/* nav color */
+header .navbar-custom{ 
+    background-color: rgba(20, 20, 20, 0.884)
+}
+
+/* dropdown mobile menu */
+.navbar-collapse a{ 
+    text-align: center;
+    float: center;
+}
+@media screen and (max-width: 600px) {
+    .nav-item{
+        margin-bottom: 43px;
+    }
+    .navbar-collapse a{
+        font-size: 2.5em;
+    }
+    .signIn-button{
+        font-size: 2.5em;
+        padding: 1.5vh;
+    }
+}
+/* - - - - - - - - - - - - - - - - - - - - -  HERO - - - - - - - - - - - - - - - - - - - -  */
+#hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/wallpaper/wallpaperAstronaut.jpg");
+    /* Set a specific height */
+    height: 100vh;
+    max-width: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* typing effect text*/
+.typing-demo {
+    width: 20.5ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 1.2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+    border-color: transparent
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - - - -  SECTIONS GENERAL - - - - - - - - - - - - - - - - - - - -  */
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  .section-title h2 {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #ffffff;
+  }
+  
+  .section-title h2::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+  }
+  
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #ffc107;
+    bottom: 0;
+    left: calc(50% - 20px);
+  }
+  
+
+/* - - - - - - - - - - - - - - - - - - - SECTION 1: ABOUT - - - - - - - - - - - - - - - - - - -  */
+/* - - - - - - - - - - - - - - - - - - -  presentation - - - - - - - - - - - - - - - - - - - -  */
+#about{
+    margin-top: 20vh;
+}
+#about .presentation h2{
+    color: #ffc107;
+}
+#about .presentation span{
+    font-family: 'Caveat', sans-serif;
+    font-size: 1.2em;
+    color: #ffc107;
+}
+
+#about .presentation p{
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    text-justify: auto;
+    line-height: 1.8;
+}
+
+@media screen and (max-width: 600px) {
+    #about .container .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #about{
+        margin-top: 10vh;
+    }
+}
+
+/* - - - - - - - - - - - - - - - - - - -  skills - - - - - - - - - - - - - - - - - - - -  */
+#about .skills {
+    margin-top: 10vh;
+}
+
+#about .skills h4{
+    color: #ffc107;
+    font-size: 1.5em;
+    padding-bottom: 0.5em;
+}
+
+.skills .progress { /* text + bar container*/
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+  .skills .progress .skill { /* text */
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    color: #45505b;
+}
+
+  .skills .progress .skill .val { /* percentage */
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: #f2f3f5;
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+}
+
+
+/* -------------------------------- SECTION 2: RESUME -------------------------------*/
+
+/*title of each section*/
+.resume .resume-title {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+  
+  .resume .resume-item {
+    padding: 0 0 0 0px;
+    margin-top: -2px;
+    margin-right: 40px;
+  }
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  /* titles of each item*/
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #97958d;
+    margin-bottom: 10px;
+  }
+
+  /*logos*/
+  .resume .resume-item img{
+    height: 50px;
+  }
+
+  .resume .resume-item img.cambridge,
+  .resume .resume-item img.social{
+    height: 35px;
+  }
+
+
+
+/* -------------------------------- SECTION 3: PROJECTS -------------------------------*/
+#projects  img {
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+#projects img:hover{
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+#projects .project-text{
+    color: rgb(185, 184, 184);
+    margin-left: -50px;
+}
+
+#projects .project-text .subtitle{
+    text-align: right;
+    font-size: 0.8em;
+    color:#ffc107;
+    margin: 0.2em;
+}
+#projects .project-text h3{
+    color:#ffffff;
+    text-align: right;
+}
+
+#projects .project-text .description{
+    background-color: rgb(17, 16, 16);
+    padding: 17px;
+    margin-top: 30px;
+}
+#projects .project-text .description span{
+    color:#ffc107;
+}
+
+#projects .project-text .tools{
+    color:#7e7a7a;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - FOOTER - - - - - - - - - - - - - - - - - - - -  */
+footer{
+    background-color: rgb(32, 30, 30);
+}
+footer p{
+    color: rgb(107, 103, 103);
+}
